@@ -1,0 +1,31 @@
+class Main{
+    int data;
+    Main next;
+    Main(int data){
+        this.data=data;
+        this.next=null;
+    }
+    public static void main(String[] args) {
+        
+        Main n1=new Main(10);
+        Main n2=new Main(20);
+        Main n3=new Main(30);
+        Main n4=new Main(40);
+        Main n5=new Main(50);
+        
+        n1.next=n2;
+        n2.next=n3;
+        n3.next=n4;
+        n4.next=n5;
+        Main t=n1;
+        while (t!=null){
+            System.out.println(t.data);
+            t=t.next;
+            
+        }
+        
+       
+        
+        
+    }
+}
